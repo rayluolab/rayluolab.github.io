@@ -13,10 +13,18 @@ sections:
       text: |
         ### Welcome to the Ray Luo Lab
 
-        Led by Prof. Ray Luo, our group at UC Irvine studies biomolecular
-        structure and function through computational physics, chemistry, and
-        biology — molecular dynamics, polarizable force fields, and
-        implicit-solvent models.
+        **Ray Luo**, Principal Investigator
+
+        - Professor, Molecular Biology &amp; Biochemistry — School of Biological Sciences
+        - Professor, Biomedical Engineering — Henry Samueli School of Engineering
+        - Professor, Chemical Engineering &amp; Materials Science — Henry Samueli School of Engineering
+
+        **Education**
+
+        - B.S., Beijing University, 1990 — Biophysics
+        - Ph.D., University of Maryland at College Park, 1998 — Chemistry
+
+        **Research interests:** Computational analysis of biomolecular sequence, structure, dynamics, and function.
       cta:
         label: Explore our research
         url: research/
