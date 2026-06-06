@@ -64,3 +64,12 @@ section li {
   font-size: 22px;
   font-weight: 600;
 }
+
+// Homepage logo band (row 2): centered ink-brush wordmark
+.home-brand img {
+  display: block;
+  margin: 0 auto;
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+}
