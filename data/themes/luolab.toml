@@ -5,15 +5,18 @@ name = "Luo Lab"
   # Primary accent (CPK-blue, from the logo's molecule)
   primary = "#2B4C8C"
 
-  # Menu / navbar
-  menu_primary = "#ffffff"
+  # Page background — warm rice paper (ink-on-paper feel)
+  background = "#FCFAF4"
+
+  # Menu / navbar — matches the paper
+  menu_primary = "#FCFAF4"
   menu_text = "#1A1A1A"
   menu_text_active = "#2B4C8C"
   menu_title = "#1A1A1A"
 
-  # Home section backgrounds (gallery white)
-  home_section_odd = "rgb(255, 255, 255)"
-  home_section_even = "rgb(247, 248, 250)"
+  # Home section backgrounds — subtle warm paper alternation (no cold gray)
+  home_section_odd = "rgb(252, 250, 244)"
+  home_section_even = "rgb(245, 239, 228)"
 
   # Links
   link = "#2B4C8C"

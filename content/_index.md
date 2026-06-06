@@ -13,34 +13,23 @@ sections:
       text: |
         ### Welcome to the Ray Luo Lab
 
-        The Ray Luo Lab at UC Irvine develops computational methods — molecular
-        dynamics, polarizable force fields, and implicit-solvent models — to
-        understand biomolecular structure and function at atomic detail. The
-        group is led by Prof. Ray Luo (Molecular Biology & Biochemistry;
-        Biomedical Engineering; Chemical Engineering & Materials Science).
+        Led by Prof. Ray Luo, our group at UC Irvine studies biomolecular
+        structure and function through computational physics, chemistry, and
+        biology — molecular dynamics, polarizable force fields, and
+        implicit-solvent models.
       cta:
         label: Explore our research
         url: research/
       cta_alt:
         label: Publications
         url: publication/
-    design:
-      background:
-        color: '#ffffff'
 
   - block: markdown
     content:
       title:
       text: |
-        ![Luo Lab](/uploads/luo-lab-logo.png)
-    design:
-      columns: '1'
-      css_class: home-brand
+        ![Luo Lab](/uploads/luo-lab-logo-transparent.png)
 
-  - block: markdown
-    content:
-      title: Research Interests
-      text: |
         At the heart of our work are biomolecules. Through the lens of
         computational physics, chemistry, and biology, we develop reliable,
         efficient methods to predict the structures, functions, and
@@ -48,6 +37,7 @@ sections:
         information encoded in genomes from physical and chemical principles.
     design:
       columns: '1'
+      css_class: home-brand
 
   - block: collection
     content:
