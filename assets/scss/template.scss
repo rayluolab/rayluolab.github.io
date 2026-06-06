@@ -13,7 +13,7 @@
 // ============================================================
 $font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $font-serif: "Times New Roman", Times, serif;
-$font-brand: "ZCOOL XiaoWei", "Times New Roman", serif;
+$font-brand: "Shippori Mincho", "Times New Roman", serif;
 
 // --- Everything on the page is Times New Roman (serif) ---
 body { font-family: $font-serif; }
@@ -49,17 +49,18 @@ section li {
 // --- Header chrome (kept sans-serif, except the brand) ---
 .navbar { font-family: $font-sans; }
 
-// Brand wordmark "Ray Luo Lab" -> ZCOOL XiaoWei, 36px
+// Brand wordmark "Ray Luo Lab" -> Shippori Mincho, 36px
 .navbar-brand {
   font-family: $font-brand;
   font-size: 36px;
+  font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1;
 }
 
-// Top navigation links -> 22px
+// Top navigation links -> Shippori Mincho, 22px
 .navbar-nav .nav-link {
-  font-family: $font-sans;
+  font-family: $font-brand;
   font-size: 22px;
   font-weight: 600;
 }
