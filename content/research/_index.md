@@ -25,4 +25,11 @@ sections:
     design:
       view: card
       columns: '2'
+
+  - block: markdown
+    content:
+      text: |
+        {{% cta cta_link="../project/" cta_text="Browse all projects →" %}}
+    design:
+      columns: '1'
 ---
