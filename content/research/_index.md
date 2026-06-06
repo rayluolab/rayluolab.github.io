@@ -28,8 +28,20 @@ sections:
 
   - block: markdown
     content:
-      text: |
-        {{% cta cta_link="../project/" cta_text="Browse all projects →" %}}
+      title: Past projects
+      text: ''
     design:
       columns: '1'
+
+  - block: collection
+    content:
+      title:
+      text: ''
+      count: 50
+      filters:
+        folders:
+          - project
+    design:
+      view: card
+      columns: '2'
 ---

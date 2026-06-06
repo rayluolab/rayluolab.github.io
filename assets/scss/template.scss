@@ -41,13 +41,13 @@ section li {
 }
 
 // --- Heading scale (clear hierarchy) ---
-.universal-wrapper h1 {          // page titles (Research, Publications, ...)
+.universal-wrapper h1,           // list-page titles (Publications, ...)
+.section-heading h1 {            // landing page/section titles (Research, People, ...)
   font-family: $font-serif;
   font-size: 32px;
   line-height: 1.2;
 }
-.section-heading h1,             // landing section titles
-.section-heading h2 {
+.section-heading h2 {            // landing sub-section titles
   font-family: $font-serif;
   font-size: 26px;
   line-height: 1.25;

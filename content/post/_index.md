@@ -8,10 +8,7 @@ sections:
   - block: markdown
     content:
       title: Notes
-      text: |
-        Literature reviews and technical notes from the lab — two streams:
-        **Literature reviews** (journal-club summaries of papers we read) and
-        **Technical notes** (methods, tutorials, and how-tos).
+      text: ''
     design:
       columns: '1'
 
