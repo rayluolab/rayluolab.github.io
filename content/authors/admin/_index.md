@@ -10,53 +10,51 @@ last_name: Luo
 superuser: true
 
 # Role/position
-role: Professor
+role: Principal Investigator
 
 # Organizations/Affiliations
 organizations:
   - name: University of California, Irvine
-    url: ''
+    url: 'https://uci.edu'
 
 # Short bio (displayed in user profile at end of posts)
-bio: ''
+bio: Computational analysis of biomolecular sequence, structure, dynamics, and function.
 
 interests:
-  -
+  - Molecular dynamics and force fields
+  - Implicit-solvent electrostatics (PB / MMPBSA)
+  - GPU-accelerated biomolecular simulation
 
 education:
   courses:
-    - course:
-      institution:
-      year:
+    - course: PhD in Chemistry
+      institution: University of Maryland, College Park
+      year: 1998
+    - course: BS in Biophysics
+      institution: Beijing University
+      year: 1990
 
 # Social/Academic Networking
-# For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: '#contact'
-# - icon: google-scholar
-#   icon_pack: ai
-#   link:
-# - icon: github
-#   icon_pack: fab
-#   link:
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+    link: 'mailto:ray.luo@uci.edu'
+  # - icon: google-scholar
+  #   icon_pack: ai
+  #   link: <GOOGLE_SCHOLAR_URL>
 
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'ray.luo@uci.edu'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 # Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Principal Investigators
+  - Principal Investigator
 ---
+
+Ray Luo is a Professor at UC Irvine with appointments in Molecular Biology &
+Biochemistry (School of Biological Sciences), Biomedical Engineering, and
+Chemical Engineering & Materials Science (Henry Samueli School of Engineering).
+His group develops computational methods to analyze biomolecular sequence,
+structure, dynamics, and function.
