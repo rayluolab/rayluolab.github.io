@@ -13,42 +13,53 @@
 // ============================================================
 $font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $font-serif: "Times New Roman", Times, serif;
-$font-brush: "Ma Shan Zheng", "Long Cang", cursive;
+$font-brand: "ZCOOL XiaoWei", "Times New Roman", serif;
 
-// Page content -> Times New Roman, slightly smaller (16px)
-body {
-  font-family: $font-serif;
-}
+// --- Everything on the page is Times New Roman (serif) ---
+body { font-family: $font-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: $font-serif; }
+
+// Body / normal content -> 18px
 .article-style,
 .article-style p,
 .article-style li,
-.universal-wrapper,
 .universal-wrapper p,
 .universal-wrapper li,
-.wg-pages,
+.hero-lead p,
 section p,
 section li {
   font-family: $font-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
 }
 
-// Keep the header in a clean sans-serif (brand overridden below)
-.navbar {
-  font-family: $font-sans;
+// Titles (page title + section titles + hero tagline) -> 22px
+.universal-wrapper h1,
+.section-heading h1,
+.section-heading h2,
+.hero-lead h3 {
+  font-family: $font-serif;
+  font-size: 22px;
+  line-height: 1.3;
 }
 
-// Brand wordmark "Ray Luo Lab" -> Chinese brush calligraphy, large
+// Content sub-headings (h3) -> 20px
+.article-style h3 { font-size: 20px; }
+
+// --- Header chrome (kept sans-serif, except the brand) ---
+.navbar { font-family: $font-sans; }
+
+// Brand wordmark "Ray Luo Lab" -> ZCOOL XiaoWei, 36px
 .navbar-brand {
-  font-family: $font-brush;
-  font-size: 32px;
-  letter-spacing: 1px;
+  font-family: $font-brand;
+  font-size: 36px;
+  letter-spacing: 0.5px;
   line-height: 1;
 }
 
-// Top navigation links (Research, Publications, ...) -> larger
+// Top navigation links -> 22px
 .navbar-nav .nav-link {
   font-family: $font-sans;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 600;
 }
