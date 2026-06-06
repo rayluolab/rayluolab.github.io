@@ -1,0 +1,21 @@
+# IDEs
+.idea/
+
+# Hugo
+/resources/
+public/
+assets/jsconfig.json
+.hugo_build.lock
+
+# Node
+node_modules/
+
+# Local reference material (not part of the site)
+LabWebArchive/
+
+# Brainstorm scratch (visual companion)
+.superpowers/
+
+# Theme demo screenshots
+images/
+preview.png
