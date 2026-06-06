@@ -9,7 +9,7 @@ sections:
     content:
       title:
       image:
-        filename: people/portrait-small.png
+        filename: people/portrait-standing-small.jpeg
       text: |
         ### Welcome to the Ray Luo Lab
 

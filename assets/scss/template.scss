@@ -15,12 +15,11 @@ $font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Ar
 $font-serif: "Times New Roman", Times, serif;
 $font-brand: "Shippori Mincho", "Times New Roman", serif;
 
-// --- Everything on the page is Times New Roman (serif) ---
 // Warm rice-paper page background (covers non-landing pages too)
 body { font-family: $font-serif; background-color: #F6F1E7; }
 h1, h2, h3, h4, h5, h6 { font-family: $font-serif; }
 
-// Body / normal content -> 18px
+// Body / normal content -> 18px, with a comfortable reading measure
 .article-style,
 .article-style p,
 .article-style li,
@@ -31,39 +30,75 @@ section p,
 section li {
   font-family: $font-serif;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.75;
+}
+// Constrain measure of long-form text (single pages + markdown blocks), not card/collection grids
+.article-container .article-style,
+.wg-markdown .article-style {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-// Titles (page title + section titles + hero tagline) -> 22px
-.universal-wrapper h1,
-.section-heading h1,
-.section-heading h2,
-.hero-lead h3 {
+// --- Heading scale (clear hierarchy) ---
+.universal-wrapper h1 {          // page titles (Research, Publications, ...)
+  font-family: $font-serif;
+  font-size: 32px;
+  line-height: 1.2;
+}
+.section-heading h1,             // landing section titles
+.section-heading h2 {
+  font-family: $font-serif;
+  font-size: 26px;
+  line-height: 1.25;
+}
+.hero-lead h3 {                  // hero tagline
   font-family: $font-serif;
   font-size: 22px;
   line-height: 1.3;
 }
+.article-style h3 { font-size: 20px; }   // in-content sub-headings
 
-// Content sub-headings (h3) -> 20px
-.article-style h3 { font-size: 20px; }
-
-// --- Header chrome (kept sans-serif, except the brand) ---
+// --- Header chrome ---
 .navbar { font-family: $font-sans; }
 
-// Brand wordmark "Ray Luo Lab" -> Shippori Mincho, 36px
+// Brand: LL monogram mark + "Ray Luo Lab" in Shippori Mincho
 .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: $font-brand;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1;
 }
+.navbar-brand::before {
+  content: "";
+  flex: none;
+  width: 36px;
+  height: 36px;
+  background: url("/uploads/ll-mark.png") no-repeat center / contain;
+}
 
-// Top navigation links -> Shippori Mincho, 22px
+// Top navigation links
 .navbar-nav .nav-link {
   font-family: $font-brand;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
+}
+// Hover/focus uses the accent (not a washed gray)
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus { color: #2B4C8C; }
+
+// --- Cards & muted text (warm, accessible) ---
+.card-simple {
+  background: #FBF8F0;                       // paper-tinted, not cold white
+  border-color: rgba(43, 76, 140, 0.12);    // faint accent hairline
+}
+.article-metadata, .article-metadata a,
+.text-muted, .figure-caption, .pub-icon {
+  color: #5C564C !important;                 // warm gray, passes WCAG AA on paper
 }
 
 // Homepage identity + mission band: centered ink-brush logo + prose
@@ -71,30 +106,13 @@ section li {
 .home-brand img {
   display: block;
   margin: 0 auto;
-  max-width: 460px;
+  max-width: 400px;
   width: 100%;
   height: auto;
 }
 .home-brand p {
   max-width: 760px;
   margin: 1.2rem auto 0;
-}
-
-// Seal-red brush underline beneath section & page titles (Chinese scholarly accent)
-.section-heading h1,
-.universal-wrapper h1 {
-  position: relative;
-  padding-bottom: 14px;
-}
-.section-heading h1::after,
-.universal-wrapper h1::after {
-  content: "";
-  display: block;
-  width: 52px;
-  height: 3px;
-  margin: 12px auto 0;
-  background: #B23A2E;          // seal red
-  border-radius: 2px;
 }
 
 // Faint ink-wash (enso) behind the hero
@@ -105,12 +123,12 @@ section li {
   content: "";
   position: absolute;
   top: 50%;
-  right: -60px;
+  right: -20px;
   transform: translateY(-50%);
-  width: 460px;
-  height: 460px;
+  width: 480px;
+  height: 480px;
   background: url("/uploads/enso.svg") no-repeat center / contain;
-  opacity: 0.05;
+  opacity: 0.07;
   pointer-events: none;
   z-index: 0;
 }
