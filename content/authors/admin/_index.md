@@ -18,7 +18,7 @@ organizations:
     url: 'https://uci.edu'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Computational analysis of biomolecular sequence, structure, dynamics, and function.
+bio: Computational study of biomolecular systems — their structure, dynamics, and function.
 
 interests:
   - Molecular dynamics and force fields
@@ -56,5 +56,5 @@ user_groups:
 Ray Luo is a Professor at UC Irvine with appointments in Molecular Biology &
 Biochemistry (School of Biological Sciences), Biomedical Engineering, and
 Chemical Engineering & Materials Science (Henry Samueli School of Engineering).
-His group develops computational methods to analyze biomolecular sequence,
-structure, dynamics, and function.
+His group develops computational methods to study biomolecular systems —
+their structure, dynamics, and function.
