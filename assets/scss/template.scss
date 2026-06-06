@@ -7,3 +7,48 @@
 .cta-group {
   justify-content: center;
 }
+
+// ============================================================
+// Typography
+// ============================================================
+$font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font-serif: "Times New Roman", Times, serif;
+$font-brush: "Ma Shan Zheng", "Long Cang", cursive;
+
+// Page content -> Times New Roman, slightly smaller (16px)
+body {
+  font-family: $font-serif;
+}
+.article-style,
+.article-style p,
+.article-style li,
+.universal-wrapper,
+.universal-wrapper p,
+.universal-wrapper li,
+.wg-pages,
+section p,
+section li {
+  font-family: $font-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+// Keep the header in a clean sans-serif (brand overridden below)
+.navbar {
+  font-family: $font-sans;
+}
+
+// Brand wordmark "Ray Luo Lab" -> Chinese brush calligraphy, large
+.navbar-brand {
+  font-family: $font-brush;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+// Top navigation links (Research, Publications, ...) -> larger
+.navbar-nav .nav-link {
+  font-family: $font-sans;
+  font-size: 19px;
+  font-weight: 600;
+}
