@@ -1,79 +1,64 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2022-10-24
+date: 2026-06-05
 type: landing
 
 sections:
   - block: hero
     content:
-      title: |
-        Ray Luo Lab
+      title:
       image:
-        filename: welcome.jpg
+        filename: branding/luo-lab-logo.png
       text: |
-        <br>
+        ### Theory · Force Fields · Simulation
 
-        <!-- Add a one-paragraph description of the group here. -->
-  
-  - block: collection
-    content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
+        We use computational physics, chemistry, and biology to understand
+        biomolecular structure and function at atomic detail.
+      cta:
+        label: Explore our research
+        url: research/
+      cta_alt:
+        label: Publications
+        url: publication/
     design:
-      view: card
-      columns: '1'
-  
+      background:
+        color: '#ffffff'
+
   - block: markdown
     content:
-      title:
-      subtitle: ''
-      text:
+      title: Research Interests
+      text: |
+        At the heart of our work are biomolecules. Through the lens of
+        computational physics, chemistry, and biology, we develop reliable,
+        efficient methods to predict the structures, functions, and
+        interactions of complex molecular systems — and to interpret the
+        information encoded in genomes from physical and chemical principles.
     design:
       columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
 
   - block: collection
     content:
-      title: Latest Preprints
-      text: ""
+      title: Research Areas
+      text: ''
+      filters:
+        folders:
+          - research
+    design:
+      view: card
+      columns: '2'
+
+  - block: collection
+    content:
+      title: Recent Publications
+      text: ''
       count: 5
       filters:
         folders:
           - publication
-        publication_type: 'article'
+        publication_type: ''
+      order: desc
     design:
       view: citation
-      columns: '1'
-
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
-    design:
       columns: '1'
 ---
