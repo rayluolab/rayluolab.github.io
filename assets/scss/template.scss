@@ -96,21 +96,6 @@ section li {
   border-radius: 2px;
 }
 
-// Ink brush-stroke divider between sections
-.brush-divider {
-  text-align: center;
-  svg { display: block; width: 60%; max-width: 380px; height: auto; margin: 0 auto; opacity: 0.5; }
-}
-.section-divider { padding-top: 0 !important; padding-bottom: 0 !important; }
-
-// Red seal "chop" (signature under the mission band)
-.seal {
-  display: inline-block;
-  width: 58px;
-  margin-top: 1.4rem;
-  svg { display: block; width: 100%; height: auto; box-shadow: 0 1px 4px rgba(0,0,0,.18); border-radius: 11px; }
-}
-
 // Faint ink-wash (enso) behind the hero
 #section-hero { position: relative; overflow: hidden; }
 #section-hero > .container,
