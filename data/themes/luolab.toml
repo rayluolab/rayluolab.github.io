@@ -14,9 +14,9 @@ name = "Luo Lab"
   menu_text_active = "#2B4C8C"
   menu_title = "#1A1A1A"
 
-  # Home section backgrounds — warm paper (subtle alternation, no white)
-  home_section_odd = "rgb(248, 243, 233)"
-  home_section_even = "rgb(240, 233, 219)"
+  # Home section backgrounds — uniform with the body paper (no bands; every page matches)
+  home_section_odd = "rgb(246, 241, 231)"
+  home_section_even = "rgb(246, 241, 231)"
 
   # Links
   link = "#2B4C8C"
