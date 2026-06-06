@@ -92,9 +92,13 @@ section li {
 .navbar-light .navbar-nav .nav-link:focus { color: #2B4C8C; }
 
 // --- Cards & muted text (warm, accessible) ---
-.card-simple {
-  background: #FBF8F0;                       // paper-tinted, not cold white
-  border-color: rgba(43, 76, 140, 0.12);    // faint accent hairline
+// Flatten collection "cards" so card-heavy pages (Research) read like the
+// plain-text pages instead of a grid of light boxes.
+.card-simple,
+.card-simple:hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 .article-metadata, .article-metadata a,
 .text-muted, .figure-caption, .pub-icon {
