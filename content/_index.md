@@ -23,8 +23,6 @@ sections:
 
         - B.S., Beijing University, 1990 — Biophysics
         - Ph.D., University of Maryland at College Park, 1998 — Chemistry
-
-        **Research interests:** Computational study of biomolecular systems — their structure, dynamics, and function.
       cta:
         label: Explore our research
         url: research/

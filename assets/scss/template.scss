@@ -124,6 +124,15 @@ section li {
   margin: 1.2rem auto 0;
 }
 
+// Hero: balance the portrait with the bio text (equal height, vertically centered)
+#section-hero .row { align-items: center; }
+#section-hero .hero-media img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 4px;
+}
+
 // Faint ink-wash (enso) behind the hero
 #section-hero { position: relative; overflow: hidden; }
 #section-hero > .container,
