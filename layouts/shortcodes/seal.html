@@ -1,0 +1,11 @@
+{{/* Red seal "chop" (印章). Usage: {{< seal char="罗" >}} */}}
+{{ $char := .Get "char" | default "罗" }}
+<span class="seal" aria-hidden="true" title="Luo">
+  <svg viewBox="0 0 100 100" role="presentation">
+    <rect x="3" y="3" width="94" height="94" rx="11" fill="#B23A2E"/>
+    <rect x="3" y="3" width="94" height="94" rx="11" fill="none" stroke="#7f271e" stroke-width="3"/>
+    <text x="50" y="50" text-anchor="middle" dominant-baseline="central"
+          font-family="'Shippori Mincho','Ma Shan Zheng',serif" font-weight="700"
+          font-size="62" fill="#FCFAF4">{{ $char }}</text>
+  </svg>
+</span>

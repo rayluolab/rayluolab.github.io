@@ -35,9 +35,18 @@ sections:
         efficient methods to predict the structures, functions, and
         interactions of complex molecular systems — and to interpret the
         information encoded in genomes from physical and chemical principles.
+
+        {{< seal char="罗" >}}
     design:
       columns: '1'
       css_class: home-brand
+
+  - block: markdown
+    content:
+      text: '{{< brush-divider >}}'
+    design:
+      columns: '1'
+      css_class: section-divider
 
   - block: collection
     content:
@@ -49,6 +58,13 @@ sections:
     design:
       view: card
       columns: '2'
+
+  - block: markdown
+    content:
+      text: '{{< brush-divider >}}'
+    design:
+      columns: '1'
+      css_class: section-divider
 
   - block: collection
     content:

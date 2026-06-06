@@ -95,3 +95,36 @@ section li {
   background: #B23A2E;          // seal red
   border-radius: 2px;
 }
+
+// Ink brush-stroke divider between sections
+.brush-divider {
+  text-align: center;
+  svg { display: block; width: 60%; max-width: 380px; height: auto; margin: 0 auto; opacity: 0.5; }
+}
+.section-divider { padding-top: 0 !important; padding-bottom: 0 !important; }
+
+// Red seal "chop" (signature under the mission band)
+.seal {
+  display: inline-block;
+  width: 58px;
+  margin-top: 1.4rem;
+  svg { display: block; width: 100%; height: auto; box-shadow: 0 1px 4px rgba(0,0,0,.18); border-radius: 11px; }
+}
+
+// Faint ink-wash (enso) behind the hero
+#section-hero { position: relative; overflow: hidden; }
+#section-hero > .container,
+#section-hero .home-section-bg + * { position: relative; z-index: 1; }
+#section-hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  width: 460px;
+  height: 460px;
+  background: url("/uploads/enso.svg") no-repeat center / contain;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
