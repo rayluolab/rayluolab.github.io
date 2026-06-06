@@ -16,7 +16,8 @@ $font-serif: "Times New Roman", Times, serif;
 $font-brand: "Shippori Mincho", "Times New Roman", serif;
 
 // --- Everything on the page is Times New Roman (serif) ---
-body { font-family: $font-serif; }
+// Warm rice-paper page background (covers non-landing pages too)
+body { font-family: $font-serif; background-color: #F6F1E7; }
 h1, h2, h3, h4, h5, h6 { font-family: $font-serif; }
 
 // Body / normal content -> 18px

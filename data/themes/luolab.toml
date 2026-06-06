@@ -6,17 +6,17 @@ name = "Luo Lab"
   primary = "#2B4C8C"
 
   # Page background — warm rice paper (ink-on-paper feel)
-  background = "#FCFAF4"
+  background = "#F6F1E7"
 
   # Menu / navbar — matches the paper
-  menu_primary = "#FCFAF4"
+  menu_primary = "#F6F1E7"
   menu_text = "#1A1A1A"
   menu_text_active = "#2B4C8C"
   menu_title = "#1A1A1A"
 
-  # Home section backgrounds — subtle warm paper alternation (no cold gray)
-  home_section_odd = "rgb(252, 250, 244)"
-  home_section_even = "rgb(245, 239, 228)"
+  # Home section backgrounds — warm paper (subtle alternation, no white)
+  home_section_odd = "rgb(248, 243, 233)"
+  home_section_even = "rgb(240, 233, 219)"
 
   # Links
   link = "#2B4C8C"
