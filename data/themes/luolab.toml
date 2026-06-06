@@ -1,0 +1,20 @@
+# Theme metadata
+name = "Luo Lab"
+
+[light]
+  # Primary accent (CPK-blue, from the logo's molecule)
+  primary = "#2B4C8C"
+
+  # Menu / navbar
+  menu_primary = "#ffffff"
+  menu_text = "#1A1A1A"
+  menu_text_active = "#2B4C8C"
+  menu_title = "#1A1A1A"
+
+  # Home section backgrounds (gallery white)
+  home_section_odd = "rgb(255, 255, 255)"
+  home_section_even = "rgb(247, 248, 250)"
+
+  # Links
+  link = "#2B4C8C"
+  link_hover = "#1d3563"
