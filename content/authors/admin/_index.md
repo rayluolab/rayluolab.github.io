@@ -39,9 +39,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:ray.luo@uci.edu'
-  # - icon: google-scholar
-  #   icon_pack: ai
-  #   link: <GOOGLE_SCHOLAR_URL>
+  - icon: google-scholar
+    icon_pack: ai
+    link: 'https://scholar.google.com/citations?user=CONRN6AAAAAJ&hl=en'
 
 email: 'ray.luo@uci.edu'
 
