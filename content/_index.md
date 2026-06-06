@@ -9,7 +9,7 @@ sections:
     content:
       title:
       image:
-        filename: branding/luo-lab-logo.png
+        filename: people/portrait-small.png
       text: |
         ### Theory · Force Fields · Simulation
 
