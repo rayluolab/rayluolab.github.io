@@ -1,0 +1,27 @@
+---
+title: Elucidation of WW domain ligand binding specificities in the Hippo pathway
+  reveals STXBP4 as YAP inhibitor
+authors:
+- Rebecca E Vargas
+- Vy Thuy Duong
+- Han Han
+- Albert Paul Ta
+- Yuxuan Chen
+- Shiji Zhao
+- Bing Yang
+- Gayoung Seo
+- Kimberly Chuc
+- Sunwoo Oh
+- Amal El Ali
+- Olga V Razorenova
+- Junjie Chen
+- Ray Luo
+- Xu Li
+- Wenqi Wang
+date: '2019-01-01'
+publishDate: '2026-06-07T05:31:10.737396Z'
+publication_types:
+- article-journal
+publication: '*The EMBO Journal*'
+doi: 10.15252/embj.2019102406
+---
