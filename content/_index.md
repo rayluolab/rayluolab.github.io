@@ -11,7 +11,7 @@ sections:
       image:
         filename: people/portrait-small.png
       text: |
-        ### Welcome to the Ray Luo Lab
+        ### Welcome to the Luo Lab
 
         **Ray Luo**, Principal Investigator
 
