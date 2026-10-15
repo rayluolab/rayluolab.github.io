@@ -45,7 +45,7 @@ sections:
       columns: '1'
       css_class: home-brand
 
-  - block: collection
+  - block: research-areas
     content:
       title: Research Areas
       text: ''
@@ -53,8 +53,7 @@ sections:
         folders:
           - research
     design:
-      view: card
-      columns: '2'
+      columns: '1'
 
   - block: collection
     content:
@@ -64,8 +63,11 @@ sections:
       filters:
         folders:
           - publication
-        publication_type: ''
+        publication_type: article-journal
       order: desc
+      archive:
+        link: publication/
+        text: See all publications
     design:
       view: citation
       columns: '1'

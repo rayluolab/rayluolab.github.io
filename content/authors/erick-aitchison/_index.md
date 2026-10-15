@@ -6,8 +6,7 @@ role: Postdoctoral Researcher
 organizations:
   - name: University of California, Irvine
     url: 'https://uci.edu'
-user_groups:
-  - Postdocs
+user_groups: []
 ---
 
 Erick Aitchison works in the Luo Lab with a background in Physics.

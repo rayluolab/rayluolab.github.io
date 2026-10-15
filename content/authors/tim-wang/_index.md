@@ -6,8 +6,7 @@ role: Undergraduate Researcher
 organizations:
   - name: University of California, Irvine
     url: 'https://uci.edu'
-user_groups:
-  - Undergraduate Students
+user_groups: []
 ---
 
 Tianhong (Tim) Wang works in the Luo Lab with a background in Biology.

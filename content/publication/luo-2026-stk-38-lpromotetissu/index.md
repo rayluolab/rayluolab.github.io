@@ -15,10 +15,10 @@ authors:
 - Rahul Warrior
 - Ray Luo
 - Wenqi Wang
-date: '2026-01-01'
+date: '2026-05-13'
 publishDate: '2026-06-07T05:31:11.505809Z'
 publication_types:
 - article-journal
-publication: '*Genes &amp; Development*'
+publication: Genes & Development
 doi: 10.1101/gad.353309.125
 ---

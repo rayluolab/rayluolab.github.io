@@ -1,0 +1,24 @@
+{{ $notes := sort (where site.RegularPages "Section" "post") "Date" "desc" }}
+<div class="notes-list">
+  {{ range $notes }}
+  <article class="note-preview">
+    <div class="note-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      {{ with .Params.note_type }}<span class="note-kind">{{ . }}</span>{{ end }}
+      {{ if .Draft }}<span class="note-draft">Draft preview</span>{{ end }}
+    </div>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <div class="note-byline">
+      {{ if .Params.authors }}
+        Contributed by {{ partial "page_metadata_authors" . }}
+      {{ else }}
+        Contributor to be added
+      {{ end }}
+    </div>
+    <p>{{ .Params.summary | default .Summary | plainify }}</p>
+    <a class="note-read" href="{{ .RelPermalink }}">Read note <span aria-hidden="true">→</span></a>
+  </article>
+  {{ else }}
+    <p class="notes-empty">Our first notes are on the way. Lab members can <a href="{{ "contribute-notes/" | relURL }}">contribute an explainer, reading note, or practical guide</a>.</p>
+  {{ end }}
+</div>

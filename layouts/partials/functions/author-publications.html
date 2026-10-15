@@ -1,0 +1,27 @@
+{{/* All years in the lab bibliography, using explicit verified author names. */}}
+{{ $names := slice .Title }}
+{{ range .Params.publication_names }}{{ $names = $names | append . }}{{ end }}
+{{ $normalized := slice }}
+{{ range $names }}{{ $normalized = $normalized | append (lower (trim . " \t\r\n")) }}{{ end }}
+{{ $matches := slice }}
+{{ $seen := slice }}
+{{ range sort (where site.RegularPages "Section" "publication") "Date" "desc" }}
+  {{ $paper := . }}
+  {{ $matched := false }}
+  {{ range .Params.authors }}
+    {{ if in $normalized (lower (trim . " \t\r\n")) }}{{ $matched = true }}{{ end }}
+  {{ end }}
+  {{ if $matched }}
+    {{ $key := .RelPermalink }}
+    {{ with .Params.doi }}
+      {{ $key = lower (trim . " \t\r\n") }}
+      {{ $key = replaceRE "^https?://(dx\\.)?doi\\.org/" "" $key }}
+      {{ if hasPrefix $key "10.1021/" }}{{ $key = replaceRE "\\.s[0-9]+$" "" $key }}{{ end }}
+    {{ end }}
+    {{ if not (in $seen $key) }}
+      {{ $matches = $matches | append $paper.RelPermalink }}
+      {{ $seen = $seen | append $key }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return (sort (where site.RegularPages "RelPermalink" "in" $matches) "Date" "desc") }}

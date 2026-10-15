@@ -1,12 +1,15 @@
 ---
-title: 'AmberTorchPB: A Unified Framework for PoissonBoltzmann-Based Reaction Field
+title: 'AmberTorchPB: A Unified Framework for Poisson–Boltzmann-Based Reaction Field
   Energy Calculation via Tensor Computation'
 authors:
+- Yongxian Wu
+- Qiankang Wang
+- Robin Jiang
 - Ray Luo
-date: '2026-01-01'
+date: '2026-03-30'
 publishDate: '2026-06-07T05:31:11.511067Z'
 publication_types:
 - article-journal
-publication: '**'
-doi: 10.1021/acs.jctc.6c00085.s001
+publication: Journal of Chemical Theory and Computation
+doi: 10.1021/acs.jctc.6c00085
 ---

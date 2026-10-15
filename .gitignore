@@ -10,6 +10,10 @@ assets/jsconfig.json
 # Node
 node_modules/
 
+# Python tools
+__pycache__/
+*.pyc
+
 # Local reference material (not part of the site)
 LabWebArchive/
 

@@ -42,7 +42,10 @@ def is_abstract(title, venue):
         or re.search(r'biophysical journal.*\d+a\b', v)
 
 def crossref(title):
-    q = urllib.parse.urlencode({"query.bibliographic": title, "rows": 3, "mailto": "ray.luo@uci.edu"})
+    # Supporting-information deposits can have the same title as the paper,
+    # but lack authors/journal and use an ACS .s001 DOI. Only match articles.
+    q = urllib.parse.urlencode({"query.bibliographic": title, "rows": 3,
+                                "filter": "type:journal-article", "mailto": "ray.luo@uci.edu"})
     try:
         with urllib.request.urlopen("https://api.crossref.org/works?" + q, timeout=20) as r:
             items = json.load(r)["message"]["items"]

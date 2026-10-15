@@ -5,10 +5,10 @@ authors:
 - Tzuling Lin
 - Zhen Huang
 - Ray Luo
-date: '2026-01-01'
+date: '2026-02-01'
 publishDate: '2026-06-07T05:31:11.516734Z'
 publication_types:
-- article-journal
-publication: '*Biophysical Journal*'
+- paper-conference
+publication: Biophysical Journal
 doi: 10.1016/j.bpj.2025.11.2565
 ---

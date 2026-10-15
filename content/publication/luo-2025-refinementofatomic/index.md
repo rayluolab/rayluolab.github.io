@@ -3,11 +3,14 @@ title: Refinement of Atomic Polarizabilities for a Polarizable Gaussian Multipol
   Force Field with Simultaneous Considerations of Both Molecular Polarizability Tensors
   and In-Solution Electrostatic Potentials
 authors:
+- Yong Duan
+- Junmei Wang
+- Piotr Cieplak
 - Ray Luo
-date: '2025-01-01'
+date: '2025-01-27'
 publishDate: '2026-06-07T05:31:11.070198Z'
 publication_types:
 - article-journal
-publication: '**'
-doi: 10.1021/acs.jcim.4c02175.s001
+publication: Journal of Chemical Information and Modeling
+doi: 10.1021/acs.jcim.4c02175
 ---

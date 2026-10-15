@@ -2,6 +2,9 @@
 title: Allostery and disease-relevant protein dynamics
 summary: Cryptic allosteric sites and functional mutations in signaling and cancer targets.
 date: 2026-06-02
+image:
+  alt: Protein ribbon schematics showing communication between distant sites.
+  caption: 'Conceptual illustration of allosteric communication; not a specific protein structure.'
 ---
 
 We use molecular dynamics and free-energy analysis to uncover cryptic allosteric

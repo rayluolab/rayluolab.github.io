@@ -6,8 +6,7 @@ role: PhD Student
 organizations:
   - name: University of California, Irvine
     url: 'https://uci.edu'
-user_groups:
-  - Graduate Students
+user_groups: []
 ---
 
 Shiji Zhao works in the Luo Lab with a background in Computer Science.

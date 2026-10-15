@@ -2,11 +2,12 @@
 title: Grid-Context Convolutional Model for Efficient Molecular Surface Construction
   from Point Clouds
 authors:
+- Yongxian Wu
 - Ray Luo
-date: '2025-01-01'
+date: '2025-06-03'
 publishDate: '2026-06-07T05:31:11.431776Z'
 publication_types:
 - article-journal
-publication: '**'
-doi: 10.1021/acs.jctc.5c00266.s001
+publication: Journal of Chemical Theory and Computation
+doi: 10.1021/acs.jctc.5c00266
 ---

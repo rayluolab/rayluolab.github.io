@@ -28,9 +28,9 @@ sections:
 
   - block: people
     content:
-      title: Graduate Students
+      title: PhD Students
       user_groups:
-        - Graduate Students
+        - PhD Students
       sort_by: Params.last_name
       sort_ascending: true
     design:
@@ -67,7 +67,7 @@ sections:
         Lisha Zeng (Carnegie Mellon); Garik Megerdich (Technip Energies);
         Tianyin Qiu (Yale); Remy Nguyen (UC Santa Cruz).
 
-        _Roster last synced from the 2022 site archive; pending update._
+        _Alumni information is from the 2022 site archive._
     design:
       columns: '1'
 ---

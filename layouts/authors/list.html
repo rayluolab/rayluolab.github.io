@@ -1,0 +1,32 @@
+{{/* Based on HugoBlox authors/list.html (MIT). Full bibliography and notes. */}}
+{{- define "main" -}}
+{{ if not .File }}
+<div class="universal-wrapper pt-3"><h1>{{ .Title }}</h1></div>
+{{ end }}
+<section id="profile-page" class="pt-5">
+  <div class="container">
+    {{ if .File }}
+      {{ $params := dict "wcPage" $ "wcBlock" . "author" (path.Base .File.Dir) }}
+      {{ partial "blocks/v1/about.html" $params }}
+    {{ end }}
+    {{ $publications := partial "functions/author-publications.html" . }}
+    <div id="publications" class="article-widget content-widget-hr member-publications">
+      <h2>Publications <span class="member-publication-count">({{ len $publications }})</span></h2>
+      <p class="member-publication-scope">Publications listed in the lab bibliography, across all years.</p>
+      {{ range $publications.GroupByDate "2006" }}
+        <h3 class="member-publication-year">{{ .Key }}</h3>
+        {{ range .Pages }}{{ partial "views/citation.html" (dict "item" .) }}{{ end }}
+      {{ else }}
+        <p>No matching publications are currently listed in the lab bibliography.</p>
+      {{ end }}
+    </div>
+    {{ $notes := sort (where .Pages "Section" "post") "Date" "desc" }}
+    {{ with $notes }}
+      <div class="article-widget content-widget-hr">
+        <h2>Notes</h2>
+        <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{- end -}}

@@ -2,6 +2,9 @@
 title: Polarizable Gaussian Multipole force field
 summary: A next-generation polarizable force field built on Gaussian-distributed charges and multipoles.
 date: 2026-06-05
+image:
+  alt: Gaussian charge clouds and induced dipoles around interacting atomic sites.
+  caption: 'Conceptual illustration of Gaussian charge distributions and induced dipoles; not simulation data.'
 ---
 
 We develop the polarizable Gaussian Multipole (pGM) model — a physically

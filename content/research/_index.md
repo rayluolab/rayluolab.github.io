@@ -15,7 +15,7 @@ sections:
     design:
       columns: '1'
 
-  - block: collection
+  - block: research-areas
     content:
       title:
       text: ''
@@ -23,8 +23,7 @@ sections:
         folders:
           - research
     design:
-      view: card
-      columns: '2'
+      columns: '1'
 
   - block: markdown
     content:

@@ -2,6 +2,9 @@
 title: Machine learning for molecular surfaces and implicit solvent
 summary: Neural models that accelerate molecular-surface generation and Poisson–Boltzmann electrostatics.
 date: 2026-06-04
+image:
+  alt: A molecular surface mesh connected to a neural network representation.
+  caption: 'Conceptual illustration of learning molecular surfaces from geometry; not simulation data.'
 ---
 
 We bring machine learning to implicit-solvent modeling: graph and convolutional
